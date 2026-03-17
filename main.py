@@ -6,8 +6,6 @@ import json
 # Initialize tools and memory manager
 tools = [write_email, schedule_meeting, check_calendar_availability]
 memory_manager = MemoryManager()
-
-# Create the email agent
 agent = EmailAgent(tools=tools, memory_manager=memory_manager)
 
 # Define user profile and rules
@@ -22,59 +20,53 @@ rules = {
     "respond": "Direct questions, meeting requests",
 }
 
-# Load memory examples from test.json
+namespace = ["email_assistant", profile["name"], "examples"]
+
+# --- Step 1: Clear existing memory so each run starts fresh ---
+print("Clearing memory...")
+memory_manager.clear_memory(namespace)
+print("Memory cleared.\n")
+
+# --- Step 2: Seed memory with initial examples from test.json ---
 with open("test.json", "r") as file:
     memory_examples = json.load(file)
 
-# Clear memory before saving new examples
-print("Clearing memory...")
-namespace = ["email_assistant", profile["name"], "examples"]
-memory_manager.store.vector_store.delete(namespace)
-print("Memory cleared.")
-
-# Debugging: Check if examples are saved to memory
-print("Saving examples to memory...")
+print(f"Seeding {len(memory_examples['examples'])} examples into memory...")
 for example in memory_examples["examples"]:
     memory_manager.save_example(namespace, example["value"])
-    print(f"Saved example: {example['value']}")
+    print(f"  Seeded: [{example['value']['category']}] {example['value']['email_thread'][:60]}")
+print("Memory seeded.\n")
 
-# Load input emails from input.json
+# --- Step 3: Load input emails ---
 with open("input.json", "r") as input_file:
     input_emails = json.load(input_file)
 
-# Prepare output storage
+# --- Step 4: Triage each email, track memory usage, save results ---
 output_data = {"outputs": []}
 
-# Process each email and log LLM performance
 for email in input_emails["emails"]:
-    print(f"Processing email: {email['subject']}")
-    result = agent.triage_email(email, profile, rules)
+    print(f"Processing: {email['subject']}")
+    triage = agent.triage_email(email, profile, rules)
 
-    # Debugging: Check memory retrieval during triage
-    retrieved_examples = memory_manager.retrieve_examples(namespace, email["email_thread"], limit=3)
-    print(f"Retrieved examples: {retrieved_examples}")
+    print(f"  Category     : {triage['category']}")
+    print(f"  Memory used  : {triage['memory_used']} ({len(triage['retrieved_examples'])} examples retrieved)")
+    print(f"  LLM response : {triage['result'][:120]}\n")
 
-    # Convert retrieved examples to a serializable format
     serialized_examples = [
-        {
-            "metadata": doc.metadata,
-            "page_content": doc.page_content
-        }
-        for doc in retrieved_examples
+        {"metadata": doc.metadata, "page_content": doc.page_content}
+        for doc in triage["retrieved_examples"]
     ]
 
-    # Check if memory was accessed
-    memory_used = len(retrieved_examples) > 0
-
-    # Append result to output data
     output_data["outputs"].append({
         "email": email,
-        "result": result.content,
-        "memory_used": memory_used,
-        "retrieved_examples": serialized_examples
+        "category": triage["category"],
+        "result": triage["result"],
+        "memory_used": triage["memory_used"],
+        "retrieved_examples_count": len(triage["retrieved_examples"]),
+        "retrieved_examples": serialized_examples,
     })
 
-# Save output to output.json
+# --- Step 5: Save results to output.json ---
 with open("output.json", "w") as output_file:
     json.dump(output_data, output_file, indent=2)
 

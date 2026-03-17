@@ -7,49 +7,11 @@
         "subject": "Quick question about API documentation",
         "email_thread": "Hi John, can you clarify the API specs?"
       },
-      "result": "The email can be classified as a **Request for Clarification**.",
-      "memory_used": true,
-      "retrieved_examples": [
-        {
-          "metadata": {
-            "namespace": "email_assistant|John|examples",
-            "key": "47ee77b8-31c4-40b2-8008-64e6f4702b81",
-            "value": {
-              "email_thread": "Hi John, can we schedule a meeting to discuss the API integration? Let me know your availability.",
-              "category": "RESPOND"
-            },
-            "_id": "47ee77b8-31c4-40b2-8008-64e6f4702b81",
-            "_collection_name": "email_assistant_memory"
-          },
-          "page_content": "{'email_thread': 'Hi John, can we schedule a meeting to discuss the API integration? Let me know your availability.', 'category': 'RESPOND'}"
-        },
-        {
-          "metadata": {
-            "namespace": "email_assistant|John|examples",
-            "key": "d8141222-e955-4093-b8fa-e722484e613c",
-            "value": {
-              "email_thread": "John, the client has requested an update on the deliverables. Can you provide the latest status?",
-              "category": "RESPOND"
-            },
-            "_id": "d8141222-e955-4093-b8fa-e722484e613c",
-            "_collection_name": "email_assistant_memory"
-          },
-          "page_content": "{'email_thread': 'John, the client has requested an update on the deliverables. Can you provide the latest status?', 'category': 'RESPOND'}"
-        },
-        {
-          "metadata": {
-            "namespace": "email_assistant|John|examples",
-            "key": "30ed96c2-1721-44c6-9920-3ddb9a074c90",
-            "value": {
-              "email_thread": "Hi John, we have a special offer for you on our new product line. Check it out!",
-              "category": "IGNORE"
-            },
-            "_id": "30ed96c2-1721-44c6-9920-3ddb9a074c90",
-            "_collection_name": "email_assistant_memory"
-          },
-          "page_content": "{'email_thread': 'Hi John, we have a special offer for you on our new product line. Check it out!', 'category': 'IGNORE'}"
-        }
-      ]
+      "category": "RESPOND",
+      "result": "RESPOND",
+      "memory_used": false,
+      "retrieved_examples_count": 0,
+      "retrieved_examples": []
     },
     {
       "email": {
@@ -58,47 +20,23 @@
         "subject": "Special offer just for you!",
         "email_thread": "Hi John, we have a special offer on our new product line. Check it out!"
       },
-      "result": "The email can be classified as \"Marketing\" or \"Promotional.\"",
+      "category": "IGNORE",
+      "result": "Category: IGNORE",
       "memory_used": true,
+      "retrieved_examples_count": 1,
       "retrieved_examples": [
         {
           "metadata": {
             "namespace": "email_assistant|John|examples",
-            "key": "30ed96c2-1721-44c6-9920-3ddb9a074c90",
+            "key": "09d6d60a-5ee9-47ad-9373-642f593cc0e9",
             "value": {
-              "email_thread": "Hi John, we have a special offer for you on our new product line. Check it out!",
-              "category": "IGNORE"
-            },
-            "_id": "30ed96c2-1721-44c6-9920-3ddb9a074c90",
-            "_collection_name": "email_assistant_memory"
-          },
-          "page_content": "{'email_thread': 'Hi John, we have a special offer for you on our new product line. Check it out!', 'category': 'IGNORE'}"
-        },
-        {
-          "metadata": {
-            "namespace": "email_assistant|John|examples",
-            "key": "47ee77b8-31c4-40b2-8008-64e6f4702b81",
-            "value": {
-              "email_thread": "Hi John, can we schedule a meeting to discuss the API integration? Let me know your availability.",
+              "email_thread": "Hi John, can you clarify the API specs?",
               "category": "RESPOND"
             },
-            "_id": "47ee77b8-31c4-40b2-8008-64e6f4702b81",
+            "_id": "09d6d60a-5ee9-47ad-9373-642f593cc0e9",
             "_collection_name": "email_assistant_memory"
           },
-          "page_content": "{'email_thread': 'Hi John, can we schedule a meeting to discuss the API integration? Let me know your availability.', 'category': 'RESPOND'}"
-        },
-        {
-          "metadata": {
-            "namespace": "email_assistant|John|examples",
-            "key": "d8141222-e955-4093-b8fa-e722484e613c",
-            "value": {
-              "email_thread": "John, the client has requested an update on the deliverables. Can you provide the latest status?",
-              "category": "RESPOND"
-            },
-            "_id": "d8141222-e955-4093-b8fa-e722484e613c",
-            "_collection_name": "email_assistant_memory"
-          },
-          "page_content": "{'email_thread': 'John, the client has requested an update on the deliverables. Can you provide the latest status?', 'category': 'RESPOND'}"
+          "page_content": "{'email_thread': 'Hi John, can you clarify the API specs?', 'category': 'RESPOND'}"
         }
       ]
     },
@@ -109,47 +47,36 @@
         "subject": "Weekly project status update",
         "email_thread": "Team, please find the attached project status report for this week. Let me know if you have any questions."
       },
-      "result": "This email can be classified as a \"Project Update\" or \"Status Report.\" It includes information about a project and invites feedback or questions.",
+      "category": "NOTIFY",
+      "result": "Category: NOTIFY",
       "memory_used": true,
+      "retrieved_examples_count": 2,
       "retrieved_examples": [
         {
           "metadata": {
             "namespace": "email_assistant|John|examples",
-            "key": "96f7bbbd-3921-4477-89b9-cb8051df6b49",
+            "key": "09d6d60a-5ee9-47ad-9373-642f593cc0e9",
             "value": {
-              "email_thread": "Team, please find the attached project status report for this week. Let me know if you have any questions.",
-              "category": "NOTIFY"
-            },
-            "_id": "96f7bbbd-3921-4477-89b9-cb8051df6b49",
-            "_collection_name": "email_assistant_memory"
-          },
-          "page_content": "{'email_thread': 'Team, please find the attached project status report for this week. Let me know if you have any questions.', 'category': 'NOTIFY'}"
-        },
-        {
-          "metadata": {
-            "namespace": "email_assistant|John|examples",
-            "key": "d8141222-e955-4093-b8fa-e722484e613c",
-            "value": {
-              "email_thread": "John, the client has requested an update on the deliverables. Can you provide the latest status?",
+              "email_thread": "Hi John, can you clarify the API specs?",
               "category": "RESPOND"
             },
-            "_id": "d8141222-e955-4093-b8fa-e722484e613c",
+            "_id": "09d6d60a-5ee9-47ad-9373-642f593cc0e9",
             "_collection_name": "email_assistant_memory"
           },
-          "page_content": "{'email_thread': 'John, the client has requested an update on the deliverables. Can you provide the latest status?', 'category': 'RESPOND'}"
+          "page_content": "{'email_thread': 'Hi John, can you clarify the API specs?', 'category': 'RESPOND'}"
         },
         {
           "metadata": {
             "namespace": "email_assistant|John|examples",
-            "key": "91127675-169f-44dd-8d96-979f3450426d",
+            "key": "61b95452-1cdb-4c84-a227-9d2dc57b71a6",
             "value": {
-              "email_thread": "The quarterly team meeting is scheduled for next Monday at 10 AM. Please mark your calendar.",
-              "category": "NOTIFY"
+              "email_thread": "Hi John, we have a special offer on our new product line. Check it out!",
+              "category": "IGNORE"
             },
-            "_id": "91127675-169f-44dd-8d96-979f3450426d",
+            "_id": "61b95452-1cdb-4c84-a227-9d2dc57b71a6",
             "_collection_name": "email_assistant_memory"
           },
-          "page_content": "{'email_thread': 'The quarterly team meeting is scheduled for next Monday at 10 AM. Please mark your calendar.', 'category': 'NOTIFY'}"
+          "page_content": "{'email_thread': 'Hi John, we have a special offer on our new product line. Check it out!', 'category': 'IGNORE'}"
         }
       ]
     },
@@ -160,31 +87,20 @@
         "subject": "Urgent: Update on deliverables",
         "email_thread": "John, the client has requested an update on the deliverables. Can you provide the latest status?"
       },
-      "result": "This email can be classified as a **Request for Update/Status Inquiry**.",
+      "category": "RESPOND",
+      "result": "Category: RESPOND",
       "memory_used": true,
+      "retrieved_examples_count": 3,
       "retrieved_examples": [
         {
           "metadata": {
             "namespace": "email_assistant|John|examples",
-            "key": "d8141222-e955-4093-b8fa-e722484e613c",
-            "value": {
-              "email_thread": "John, the client has requested an update on the deliverables. Can you provide the latest status?",
-              "category": "RESPOND"
-            },
-            "_id": "d8141222-e955-4093-b8fa-e722484e613c",
-            "_collection_name": "email_assistant_memory"
-          },
-          "page_content": "{'email_thread': 'John, the client has requested an update on the deliverables. Can you provide the latest status?', 'category': 'RESPOND'}"
-        },
-        {
-          "metadata": {
-            "namespace": "email_assistant|John|examples",
-            "key": "96f7bbbd-3921-4477-89b9-cb8051df6b49",
+            "key": "31b0a17d-2bd7-4e81-aa6f-347618ff8855",
             "value": {
               "email_thread": "Team, please find the attached project status report for this week. Let me know if you have any questions.",
               "category": "NOTIFY"
             },
-            "_id": "96f7bbbd-3921-4477-89b9-cb8051df6b49",
+            "_id": "31b0a17d-2bd7-4e81-aa6f-347618ff8855",
             "_collection_name": "email_assistant_memory"
           },
           "page_content": "{'email_thread': 'Team, please find the attached project status report for this week. Let me know if you have any questions.', 'category': 'NOTIFY'}"
@@ -192,15 +108,28 @@
         {
           "metadata": {
             "namespace": "email_assistant|John|examples",
-            "key": "47ee77b8-31c4-40b2-8008-64e6f4702b81",
+            "key": "09d6d60a-5ee9-47ad-9373-642f593cc0e9",
             "value": {
-              "email_thread": "Hi John, can we schedule a meeting to discuss the API integration? Let me know your availability.",
+              "email_thread": "Hi John, can you clarify the API specs?",
               "category": "RESPOND"
             },
-            "_id": "47ee77b8-31c4-40b2-8008-64e6f4702b81",
+            "_id": "09d6d60a-5ee9-47ad-9373-642f593cc0e9",
             "_collection_name": "email_assistant_memory"
           },
-          "page_content": "{'email_thread': 'Hi John, can we schedule a meeting to discuss the API integration? Let me know your availability.', 'category': 'RESPOND'}"
+          "page_content": "{'email_thread': 'Hi John, can you clarify the API specs?', 'category': 'RESPOND'}"
+        },
+        {
+          "metadata": {
+            "namespace": "email_assistant|John|examples",
+            "key": "61b95452-1cdb-4c84-a227-9d2dc57b71a6",
+            "value": {
+              "email_thread": "Hi John, we have a special offer on our new product line. Check it out!",
+              "category": "IGNORE"
+            },
+            "_id": "61b95452-1cdb-4c84-a227-9d2dc57b71a6",
+            "_collection_name": "email_assistant_memory"
+          },
+          "page_content": "{'email_thread': 'Hi John, we have a special offer on our new product line. Check it out!', 'category': 'IGNORE'}"
         }
       ]
     },
@@ -211,18 +140,20 @@
         "subject": "Policy Update: Work from Home",
         "email_thread": "Dear John, please review the updated work-from-home policy attached. Let us know if you have any questions."
       },
-      "result": "This email can be classified as \"Business Communication\" or \"Workplace Policy Notification.\"",
+      "category": "NOTIFY",
+      "result": "Category: NOTIFY",
       "memory_used": true,
+      "retrieved_examples_count": 3,
       "retrieved_examples": [
         {
           "metadata": {
             "namespace": "email_assistant|John|examples",
-            "key": "d8141222-e955-4093-b8fa-e722484e613c",
+            "key": "dc99bd9e-356e-4279-8a27-3812745ac3f5",
             "value": {
               "email_thread": "John, the client has requested an update on the deliverables. Can you provide the latest status?",
               "category": "RESPOND"
             },
-            "_id": "d8141222-e955-4093-b8fa-e722484e613c",
+            "_id": "dc99bd9e-356e-4279-8a27-3812745ac3f5",
             "_collection_name": "email_assistant_memory"
           },
           "page_content": "{'email_thread': 'John, the client has requested an update on the deliverables. Can you provide the latest status?', 'category': 'RESPOND'}"
@@ -230,12 +161,12 @@
         {
           "metadata": {
             "namespace": "email_assistant|John|examples",
-            "key": "96f7bbbd-3921-4477-89b9-cb8051df6b49",
+            "key": "31b0a17d-2bd7-4e81-aa6f-347618ff8855",
             "value": {
               "email_thread": "Team, please find the attached project status report for this week. Let me know if you have any questions.",
               "category": "NOTIFY"
             },
-            "_id": "96f7bbbd-3921-4477-89b9-cb8051df6b49",
+            "_id": "31b0a17d-2bd7-4e81-aa6f-347618ff8855",
             "_collection_name": "email_assistant_memory"
           },
           "page_content": "{'email_thread': 'Team, please find the attached project status report for this week. Let me know if you have any questions.', 'category': 'NOTIFY'}"
@@ -243,15 +174,15 @@
         {
           "metadata": {
             "namespace": "email_assistant|John|examples",
-            "key": "47ee77b8-31c4-40b2-8008-64e6f4702b81",
+            "key": "09d6d60a-5ee9-47ad-9373-642f593cc0e9",
             "value": {
-              "email_thread": "Hi John, can we schedule a meeting to discuss the API integration? Let me know your availability.",
+              "email_thread": "Hi John, can you clarify the API specs?",
               "category": "RESPOND"
             },
-            "_id": "47ee77b8-31c4-40b2-8008-64e6f4702b81",
+            "_id": "09d6d60a-5ee9-47ad-9373-642f593cc0e9",
             "_collection_name": "email_assistant_memory"
           },
-          "page_content": "{'email_thread': 'Hi John, can we schedule a meeting to discuss the API integration? Let me know your availability.', 'category': 'RESPOND'}"
+          "page_content": "{'email_thread': 'Hi John, can you clarify the API specs?', 'category': 'RESPOND'}"
         }
       ]
     },
@@ -262,31 +193,33 @@
         "subject": "Follow-up on API documentation",
         "email_thread": "Hi John, just following up on my previous email about the API specs. Any updates?"
       },
-      "result": "This email can be classified as a **Follow-up Inquiry**.",
+      "category": "RESPOND",
+      "result": "Category: RESPOND",
       "memory_used": true,
+      "retrieved_examples_count": 3,
       "retrieved_examples": [
         {
           "metadata": {
             "namespace": "email_assistant|John|examples",
-            "key": "47ee77b8-31c4-40b2-8008-64e6f4702b81",
+            "key": "09d6d60a-5ee9-47ad-9373-642f593cc0e9",
             "value": {
-              "email_thread": "Hi John, can we schedule a meeting to discuss the API integration? Let me know your availability.",
+              "email_thread": "Hi John, can you clarify the API specs?",
               "category": "RESPOND"
             },
-            "_id": "47ee77b8-31c4-40b2-8008-64e6f4702b81",
+            "_id": "09d6d60a-5ee9-47ad-9373-642f593cc0e9",
             "_collection_name": "email_assistant_memory"
           },
-          "page_content": "{'email_thread': 'Hi John, can we schedule a meeting to discuss the API integration? Let me know your availability.', 'category': 'RESPOND'}"
+          "page_content": "{'email_thread': 'Hi John, can you clarify the API specs?', 'category': 'RESPOND'}"
         },
         {
           "metadata": {
             "namespace": "email_assistant|John|examples",
-            "key": "d8141222-e955-4093-b8fa-e722484e613c",
+            "key": "dc99bd9e-356e-4279-8a27-3812745ac3f5",
             "value": {
               "email_thread": "John, the client has requested an update on the deliverables. Can you provide the latest status?",
               "category": "RESPOND"
             },
-            "_id": "d8141222-e955-4093-b8fa-e722484e613c",
+            "_id": "dc99bd9e-356e-4279-8a27-3812745ac3f5",
             "_collection_name": "email_assistant_memory"
           },
           "page_content": "{'email_thread': 'John, the client has requested an update on the deliverables. Can you provide the latest status?', 'category': 'RESPOND'}"
@@ -294,15 +227,15 @@
         {
           "metadata": {
             "namespace": "email_assistant|John|examples",
-            "key": "30ed96c2-1721-44c6-9920-3ddb9a074c90",
+            "key": "5897b730-1e40-4431-af50-235ec74f73e9",
             "value": {
-              "email_thread": "Hi John, we have a special offer for you on our new product line. Check it out!",
-              "category": "IGNORE"
+              "email_thread": "Dear John, please review the updated work-from-home policy attached. Let us know if you have any questions.",
+              "category": "NOTIFY"
             },
-            "_id": "30ed96c2-1721-44c6-9920-3ddb9a074c90",
+            "_id": "5897b730-1e40-4431-af50-235ec74f73e9",
             "_collection_name": "email_assistant_memory"
           },
-          "page_content": "{'email_thread': 'Hi John, we have a special offer for you on our new product line. Check it out!', 'category': 'IGNORE'}"
+          "page_content": "{'email_thread': 'Dear John, please review the updated work-from-home policy attached. Let us know if you have any questions.', 'category': 'NOTIFY'}"
         }
       ]
     }

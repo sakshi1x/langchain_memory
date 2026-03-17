@@ -2,11 +2,12 @@ from qdrant_client import QdrantClient
 from langchain_qdrant import QdrantVectorStore
 from langchain_openai import OpenAIEmbeddings
 import uuid
-from qdrant_client.models import Distance, VectorParams
+from qdrant_client.models import Distance, VectorParams, Filter, FieldCondition, MatchValue
 
 class QdrantStore:
     def __init__(self, path, collection_name, embedding_model):
         self.client = QdrantClient(path=path)
+        self.collection_name = collection_name
         self.embeddings = OpenAIEmbeddings(model=embedding_model)
 
         # Check if the collection exists, and create it if not
@@ -45,7 +46,33 @@ class QdrantStore:
             ids=[key]
         )
 
+    def clear(self, namespace):
+        """Delete all points matching the given namespace."""
+        namespace_str = "|".join(namespace)
+        self.client.delete(
+            collection_name=self.collection_name,
+            points_selector=Filter(
+                must=[
+                    FieldCondition(
+                        key="metadata.namespace",
+                        match=MatchValue(value=namespace_str)
+                    )
+                ]
+            )
+        )
+
     def search(self, namespace, query, limit=3):
-        results = self.vector_store.similarity_search(query, k=limit)
-        # print(f"[DEBUG] Memory search results: {results}")  # Log memory search
+        namespace_str = "|".join(namespace)
+        results = self.vector_store.similarity_search(
+            query,
+            k=limit,
+            filter=Filter(
+                must=[
+                    FieldCondition(
+                        key="metadata.namespace",
+                        match=MatchValue(value=namespace_str)
+                    )
+                ]
+            )
+        )
         return results

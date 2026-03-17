@@ -19,6 +19,9 @@ class MemoryManager:
         # print(f"[DEBUG] Retrieved from memory: {results}")  # Log memory retrieval
         return results
 
+    def clear_memory(self, namespace):
+        self.store.clear(namespace)
+
     def close(self):
         if hasattr(self.store, 'client'):
             self.store.client.close()

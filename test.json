@@ -1,52 +1,5 @@
 {
   "examples": [
-    {
-      "namespace": ["email_assistant", "John", "examples"],
-      "key": "example1",
-      "value": {
-        "email_thread": "Hi John, we have a special offer for you on our new product line. Check it out!",
-        "category": "IGNORE"
-      }
-    },
-    {
-      "namespace": ["email_assistant", "John", "examples"],
-      "key": "example2",
-      "value": {
-        "email_thread": "Team, please find the attached project status report for this week. Let me know if you have any questions.",
-        "category": "NOTIFY"
-      }
-    },
-    {
-      "namespace": ["email_assistant", "John", "examples"],
-      "key": "example3",
-      "value": {
-        "email_thread": "Hi John, can we schedule a meeting to discuss the API integration? Let me know your availability.",
-        "category": "RESPOND"
-      }
-    },
-    {
-      "namespace": ["email_assistant", "John", "examples"],
-      "key": "example4",
-      "value": {
-        "email_thread": "Reminder: Your subscription is about to expire. Renew now to continue enjoying our services.",
-        "category": "IGNORE"
-      }
-    },
-    {
-      "namespace": ["email_assistant", "John", "examples"],
-      "key": "example5",
-      "value": {
-        "email_thread": "John, the client has requested an update on the deliverables. Can you provide the latest status?",
-        "category": "RESPOND"
-      }
-    },
-    {
-      "namespace": ["email_assistant", "John", "examples"],
-      "key": "example6",
-      "value": {
-        "email_thread": "The quarterly team meeting is scheduled for next Monday at 10 AM. Please mark your calendar.",
-        "category": "NOTIFY"
-      }
-    }
+
   ]
 }
