@@ -1,0 +1,6 @@
+qdrant-client
+langchain
+langmem
+langchain-qdrant
+langchain-classic
+dotenv

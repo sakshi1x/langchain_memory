@@ -1,0 +1,310 @@
+{
+  "outputs": [
+    {
+      "email": {
+        "author": "Alice Smith <alice.smith@company.com>",
+        "to": "John Doe <john.doe@company.com>",
+        "subject": "Quick question about API documentation",
+        "email_thread": "Hi John, can you clarify the API specs?"
+      },
+      "result": "The email can be classified as a **Request for Clarification**.",
+      "memory_used": true,
+      "retrieved_examples": [
+        {
+          "metadata": {
+            "namespace": "email_assistant|John|examples",
+            "key": "47ee77b8-31c4-40b2-8008-64e6f4702b81",
+            "value": {
+              "email_thread": "Hi John, can we schedule a meeting to discuss the API integration? Let me know your availability.",
+              "category": "RESPOND"
+            },
+            "_id": "47ee77b8-31c4-40b2-8008-64e6f4702b81",
+            "_collection_name": "email_assistant_memory"
+          },
+          "page_content": "{'email_thread': 'Hi John, can we schedule a meeting to discuss the API integration? Let me know your availability.', 'category': 'RESPOND'}"
+        },
+        {
+          "metadata": {
+            "namespace": "email_assistant|John|examples",
+            "key": "d8141222-e955-4093-b8fa-e722484e613c",
+            "value": {
+              "email_thread": "John, the client has requested an update on the deliverables. Can you provide the latest status?",
+              "category": "RESPOND"
+            },
+            "_id": "d8141222-e955-4093-b8fa-e722484e613c",
+            "_collection_name": "email_assistant_memory"
+          },
+          "page_content": "{'email_thread': 'John, the client has requested an update on the deliverables. Can you provide the latest status?', 'category': 'RESPOND'}"
+        },
+        {
+          "metadata": {
+            "namespace": "email_assistant|John|examples",
+            "key": "30ed96c2-1721-44c6-9920-3ddb9a074c90",
+            "value": {
+              "email_thread": "Hi John, we have a special offer for you on our new product line. Check it out!",
+              "category": "IGNORE"
+            },
+            "_id": "30ed96c2-1721-44c6-9920-3ddb9a074c90",
+            "_collection_name": "email_assistant_memory"
+          },
+          "page_content": "{'email_thread': 'Hi John, we have a special offer for you on our new product line. Check it out!', 'category': 'IGNORE'}"
+        }
+      ]
+    },
+    {
+      "email": {
+        "author": "Marketing Team <marketing@company.com>",
+        "to": "John Doe <john.doe@company.com>",
+        "subject": "Special offer just for you!",
+        "email_thread": "Hi John, we have a special offer on our new product line. Check it out!"
+      },
+      "result": "The email can be classified as \"Marketing\" or \"Promotional.\"",
+      "memory_used": true,
+      "retrieved_examples": [
+        {
+          "metadata": {
+            "namespace": "email_assistant|John|examples",
+            "key": "30ed96c2-1721-44c6-9920-3ddb9a074c90",
+            "value": {
+              "email_thread": "Hi John, we have a special offer for you on our new product line. Check it out!",
+              "category": "IGNORE"
+            },
+            "_id": "30ed96c2-1721-44c6-9920-3ddb9a074c90",
+            "_collection_name": "email_assistant_memory"
+          },
+          "page_content": "{'email_thread': 'Hi John, we have a special offer for you on our new product line. Check it out!', 'category': 'IGNORE'}"
+        },
+        {
+          "metadata": {
+            "namespace": "email_assistant|John|examples",
+            "key": "47ee77b8-31c4-40b2-8008-64e6f4702b81",
+            "value": {
+              "email_thread": "Hi John, can we schedule a meeting to discuss the API integration? Let me know your availability.",
+              "category": "RESPOND"
+            },
+            "_id": "47ee77b8-31c4-40b2-8008-64e6f4702b81",
+            "_collection_name": "email_assistant_memory"
+          },
+          "page_content": "{'email_thread': 'Hi John, can we schedule a meeting to discuss the API integration? Let me know your availability.', 'category': 'RESPOND'}"
+        },
+        {
+          "metadata": {
+            "namespace": "email_assistant|John|examples",
+            "key": "d8141222-e955-4093-b8fa-e722484e613c",
+            "value": {
+              "email_thread": "John, the client has requested an update on the deliverables. Can you provide the latest status?",
+              "category": "RESPOND"
+            },
+            "_id": "d8141222-e955-4093-b8fa-e722484e613c",
+            "_collection_name": "email_assistant_memory"
+          },
+          "page_content": "{'email_thread': 'John, the client has requested an update on the deliverables. Can you provide the latest status?', 'category': 'RESPOND'}"
+        }
+      ]
+    },
+    {
+      "email": {
+        "author": "Project Manager <pm@company.com>",
+        "to": "John Doe <john.doe@company.com>",
+        "subject": "Weekly project status update",
+        "email_thread": "Team, please find the attached project status report for this week. Let me know if you have any questions."
+      },
+      "result": "This email can be classified as a \"Project Update\" or \"Status Report.\" It includes information about a project and invites feedback or questions.",
+      "memory_used": true,
+      "retrieved_examples": [
+        {
+          "metadata": {
+            "namespace": "email_assistant|John|examples",
+            "key": "96f7bbbd-3921-4477-89b9-cb8051df6b49",
+            "value": {
+              "email_thread": "Team, please find the attached project status report for this week. Let me know if you have any questions.",
+              "category": "NOTIFY"
+            },
+            "_id": "96f7bbbd-3921-4477-89b9-cb8051df6b49",
+            "_collection_name": "email_assistant_memory"
+          },
+          "page_content": "{'email_thread': 'Team, please find the attached project status report for this week. Let me know if you have any questions.', 'category': 'NOTIFY'}"
+        },
+        {
+          "metadata": {
+            "namespace": "email_assistant|John|examples",
+            "key": "d8141222-e955-4093-b8fa-e722484e613c",
+            "value": {
+              "email_thread": "John, the client has requested an update on the deliverables. Can you provide the latest status?",
+              "category": "RESPOND"
+            },
+            "_id": "d8141222-e955-4093-b8fa-e722484e613c",
+            "_collection_name": "email_assistant_memory"
+          },
+          "page_content": "{'email_thread': 'John, the client has requested an update on the deliverables. Can you provide the latest status?', 'category': 'RESPOND'}"
+        },
+        {
+          "metadata": {
+            "namespace": "email_assistant|John|examples",
+            "key": "91127675-169f-44dd-8d96-979f3450426d",
+            "value": {
+              "email_thread": "The quarterly team meeting is scheduled for next Monday at 10 AM. Please mark your calendar.",
+              "category": "NOTIFY"
+            },
+            "_id": "91127675-169f-44dd-8d96-979f3450426d",
+            "_collection_name": "email_assistant_memory"
+          },
+          "page_content": "{'email_thread': 'The quarterly team meeting is scheduled for next Monday at 10 AM. Please mark your calendar.', 'category': 'NOTIFY'}"
+        }
+      ]
+    },
+    {
+      "email": {
+        "author": "Client <client@business.com>",
+        "to": "John Doe <john.doe@company.com>",
+        "subject": "Urgent: Update on deliverables",
+        "email_thread": "John, the client has requested an update on the deliverables. Can you provide the latest status?"
+      },
+      "result": "This email can be classified as a **Request for Update/Status Inquiry**.",
+      "memory_used": true,
+      "retrieved_examples": [
+        {
+          "metadata": {
+            "namespace": "email_assistant|John|examples",
+            "key": "d8141222-e955-4093-b8fa-e722484e613c",
+            "value": {
+              "email_thread": "John, the client has requested an update on the deliverables. Can you provide the latest status?",
+              "category": "RESPOND"
+            },
+            "_id": "d8141222-e955-4093-b8fa-e722484e613c",
+            "_collection_name": "email_assistant_memory"
+          },
+          "page_content": "{'email_thread': 'John, the client has requested an update on the deliverables. Can you provide the latest status?', 'category': 'RESPOND'}"
+        },
+        {
+          "metadata": {
+            "namespace": "email_assistant|John|examples",
+            "key": "96f7bbbd-3921-4477-89b9-cb8051df6b49",
+            "value": {
+              "email_thread": "Team, please find the attached project status report for this week. Let me know if you have any questions.",
+              "category": "NOTIFY"
+            },
+            "_id": "96f7bbbd-3921-4477-89b9-cb8051df6b49",
+            "_collection_name": "email_assistant_memory"
+          },
+          "page_content": "{'email_thread': 'Team, please find the attached project status report for this week. Let me know if you have any questions.', 'category': 'NOTIFY'}"
+        },
+        {
+          "metadata": {
+            "namespace": "email_assistant|John|examples",
+            "key": "47ee77b8-31c4-40b2-8008-64e6f4702b81",
+            "value": {
+              "email_thread": "Hi John, can we schedule a meeting to discuss the API integration? Let me know your availability.",
+              "category": "RESPOND"
+            },
+            "_id": "47ee77b8-31c4-40b2-8008-64e6f4702b81",
+            "_collection_name": "email_assistant_memory"
+          },
+          "page_content": "{'email_thread': 'Hi John, can we schedule a meeting to discuss the API integration? Let me know your availability.', 'category': 'RESPOND'}"
+        }
+      ]
+    },
+    {
+      "email": {
+        "author": "HR Department <hr@company.com>",
+        "to": "John Doe <john.doe@company.com>",
+        "subject": "Policy Update: Work from Home",
+        "email_thread": "Dear John, please review the updated work-from-home policy attached. Let us know if you have any questions."
+      },
+      "result": "This email can be classified as \"Business Communication\" or \"Workplace Policy Notification.\"",
+      "memory_used": true,
+      "retrieved_examples": [
+        {
+          "metadata": {
+            "namespace": "email_assistant|John|examples",
+            "key": "d8141222-e955-4093-b8fa-e722484e613c",
+            "value": {
+              "email_thread": "John, the client has requested an update on the deliverables. Can you provide the latest status?",
+              "category": "RESPOND"
+            },
+            "_id": "d8141222-e955-4093-b8fa-e722484e613c",
+            "_collection_name": "email_assistant_memory"
+          },
+          "page_content": "{'email_thread': 'John, the client has requested an update on the deliverables. Can you provide the latest status?', 'category': 'RESPOND'}"
+        },
+        {
+          "metadata": {
+            "namespace": "email_assistant|John|examples",
+            "key": "96f7bbbd-3921-4477-89b9-cb8051df6b49",
+            "value": {
+              "email_thread": "Team, please find the attached project status report for this week. Let me know if you have any questions.",
+              "category": "NOTIFY"
+            },
+            "_id": "96f7bbbd-3921-4477-89b9-cb8051df6b49",
+            "_collection_name": "email_assistant_memory"
+          },
+          "page_content": "{'email_thread': 'Team, please find the attached project status report for this week. Let me know if you have any questions.', 'category': 'NOTIFY'}"
+        },
+        {
+          "metadata": {
+            "namespace": "email_assistant|John|examples",
+            "key": "47ee77b8-31c4-40b2-8008-64e6f4702b81",
+            "value": {
+              "email_thread": "Hi John, can we schedule a meeting to discuss the API integration? Let me know your availability.",
+              "category": "RESPOND"
+            },
+            "_id": "47ee77b8-31c4-40b2-8008-64e6f4702b81",
+            "_collection_name": "email_assistant_memory"
+          },
+          "page_content": "{'email_thread': 'Hi John, can we schedule a meeting to discuss the API integration? Let me know your availability.', 'category': 'RESPOND'}"
+        }
+      ]
+    },
+    {
+      "email": {
+        "author": "Alice Smith <alice.smith@company.com>",
+        "to": "John Doe <john.doe@company.com>",
+        "subject": "Follow-up on API documentation",
+        "email_thread": "Hi John, just following up on my previous email about the API specs. Any updates?"
+      },
+      "result": "This email can be classified as a **Follow-up Inquiry**.",
+      "memory_used": true,
+      "retrieved_examples": [
+        {
+          "metadata": {
+            "namespace": "email_assistant|John|examples",
+            "key": "47ee77b8-31c4-40b2-8008-64e6f4702b81",
+            "value": {
+              "email_thread": "Hi John, can we schedule a meeting to discuss the API integration? Let me know your availability.",
+              "category": "RESPOND"
+            },
+            "_id": "47ee77b8-31c4-40b2-8008-64e6f4702b81",
+            "_collection_name": "email_assistant_memory"
+          },
+          "page_content": "{'email_thread': 'Hi John, can we schedule a meeting to discuss the API integration? Let me know your availability.', 'category': 'RESPOND'}"
+        },
+        {
+          "metadata": {
+            "namespace": "email_assistant|John|examples",
+            "key": "d8141222-e955-4093-b8fa-e722484e613c",
+            "value": {
+              "email_thread": "John, the client has requested an update on the deliverables. Can you provide the latest status?",
+              "category": "RESPOND"
+            },
+            "_id": "d8141222-e955-4093-b8fa-e722484e613c",
+            "_collection_name": "email_assistant_memory"
+          },
+          "page_content": "{'email_thread': 'John, the client has requested an update on the deliverables. Can you provide the latest status?', 'category': 'RESPOND'}"
+        },
+        {
+          "metadata": {
+            "namespace": "email_assistant|John|examples",
+            "key": "30ed96c2-1721-44c6-9920-3ddb9a074c90",
+            "value": {
+              "email_thread": "Hi John, we have a special offer for you on our new product line. Check it out!",
+              "category": "IGNORE"
+            },
+            "_id": "30ed96c2-1721-44c6-9920-3ddb9a074c90",
+            "_collection_name": "email_assistant_memory"
+          },
+          "page_content": "{'email_thread': 'Hi John, we have a special offer for you on our new product line. Check it out!', 'category': 'IGNORE'}"
+        }
+      ]
+    }
+  ]
+}
