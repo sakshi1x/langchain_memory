@@ -1,2 +1,17 @@
 venv
 .env
+qdrant_data
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+.DS_Store
+.idea
+.vscode
+*.log
+*.bak
+*.tmp
+*.swp
+*.swo       

@@ -28,12 +28,12 @@
         {
           "metadata": {
             "namespace": "email_assistant|John|examples",
-            "key": "09d6d60a-5ee9-47ad-9373-642f593cc0e9",
+            "key": "85d4d8e2-4ebe-4b4b-9901-c815edda5cf4",
             "value": {
               "email_thread": "Hi John, can you clarify the API specs?",
               "category": "RESPOND"
             },
-            "_id": "09d6d60a-5ee9-47ad-9373-642f593cc0e9",
+            "_id": "85d4d8e2-4ebe-4b4b-9901-c815edda5cf4",
             "_collection_name": "email_assistant_memory"
           },
           "page_content": "{'email_thread': 'Hi John, can you clarify the API specs?', 'category': 'RESPOND'}"
@@ -55,12 +55,12 @@
         {
           "metadata": {
             "namespace": "email_assistant|John|examples",
-            "key": "09d6d60a-5ee9-47ad-9373-642f593cc0e9",
+            "key": "85d4d8e2-4ebe-4b4b-9901-c815edda5cf4",
             "value": {
               "email_thread": "Hi John, can you clarify the API specs?",
               "category": "RESPOND"
             },
-            "_id": "09d6d60a-5ee9-47ad-9373-642f593cc0e9",
+            "_id": "85d4d8e2-4ebe-4b4b-9901-c815edda5cf4",
             "_collection_name": "email_assistant_memory"
           },
           "page_content": "{'email_thread': 'Hi John, can you clarify the API specs?', 'category': 'RESPOND'}"
@@ -68,12 +68,12 @@
         {
           "metadata": {
             "namespace": "email_assistant|John|examples",
-            "key": "61b95452-1cdb-4c84-a227-9d2dc57b71a6",
+            "key": "ee9599b2-aa5a-476e-9315-63dac379dac0",
             "value": {
               "email_thread": "Hi John, we have a special offer on our new product line. Check it out!",
               "category": "IGNORE"
             },
-            "_id": "61b95452-1cdb-4c84-a227-9d2dc57b71a6",
+            "_id": "ee9599b2-aa5a-476e-9315-63dac379dac0",
             "_collection_name": "email_assistant_memory"
           },
           "page_content": "{'email_thread': 'Hi John, we have a special offer on our new product line. Check it out!', 'category': 'IGNORE'}"
@@ -95,12 +95,12 @@
         {
           "metadata": {
             "namespace": "email_assistant|John|examples",
-            "key": "31b0a17d-2bd7-4e81-aa6f-347618ff8855",
+            "key": "8b544887-a138-4ecb-bc17-03e117fca1a2",
             "value": {
               "email_thread": "Team, please find the attached project status report for this week. Let me know if you have any questions.",
               "category": "NOTIFY"
             },
-            "_id": "31b0a17d-2bd7-4e81-aa6f-347618ff8855",
+            "_id": "8b544887-a138-4ecb-bc17-03e117fca1a2",
             "_collection_name": "email_assistant_memory"
           },
           "page_content": "{'email_thread': 'Team, please find the attached project status report for this week. Let me know if you have any questions.', 'category': 'NOTIFY'}"
@@ -108,12 +108,12 @@
         {
           "metadata": {
             "namespace": "email_assistant|John|examples",
-            "key": "09d6d60a-5ee9-47ad-9373-642f593cc0e9",
+            "key": "85d4d8e2-4ebe-4b4b-9901-c815edda5cf4",
             "value": {
               "email_thread": "Hi John, can you clarify the API specs?",
               "category": "RESPOND"
             },
-            "_id": "09d6d60a-5ee9-47ad-9373-642f593cc0e9",
+            "_id": "85d4d8e2-4ebe-4b4b-9901-c815edda5cf4",
             "_collection_name": "email_assistant_memory"
           },
           "page_content": "{'email_thread': 'Hi John, can you clarify the API specs?', 'category': 'RESPOND'}"
@@ -121,12 +121,12 @@
         {
           "metadata": {
             "namespace": "email_assistant|John|examples",
-            "key": "61b95452-1cdb-4c84-a227-9d2dc57b71a6",
+            "key": "ee9599b2-aa5a-476e-9315-63dac379dac0",
             "value": {
               "email_thread": "Hi John, we have a special offer on our new product line. Check it out!",
               "category": "IGNORE"
             },
-            "_id": "61b95452-1cdb-4c84-a227-9d2dc57b71a6",
+            "_id": "ee9599b2-aa5a-476e-9315-63dac379dac0",
             "_collection_name": "email_assistant_memory"
           },
           "page_content": "{'email_thread': 'Hi John, we have a special offer on our new product line. Check it out!', 'category': 'IGNORE'}"
@@ -148,12 +148,12 @@
         {
           "metadata": {
             "namespace": "email_assistant|John|examples",
-            "key": "dc99bd9e-356e-4279-8a27-3812745ac3f5",
+            "key": "64eb3486-206e-4712-b218-79d9b2745d51",
             "value": {
               "email_thread": "John, the client has requested an update on the deliverables. Can you provide the latest status?",
               "category": "RESPOND"
             },
-            "_id": "dc99bd9e-356e-4279-8a27-3812745ac3f5",
+            "_id": "64eb3486-206e-4712-b218-79d9b2745d51",
             "_collection_name": "email_assistant_memory"
           },
           "page_content": "{'email_thread': 'John, the client has requested an update on the deliverables. Can you provide the latest status?', 'category': 'RESPOND'}"
@@ -161,12 +161,12 @@
         {
           "metadata": {
             "namespace": "email_assistant|John|examples",
-            "key": "31b0a17d-2bd7-4e81-aa6f-347618ff8855",
+            "key": "8b544887-a138-4ecb-bc17-03e117fca1a2",
             "value": {
               "email_thread": "Team, please find the attached project status report for this week. Let me know if you have any questions.",
               "category": "NOTIFY"
             },
-            "_id": "31b0a17d-2bd7-4e81-aa6f-347618ff8855",
+            "_id": "8b544887-a138-4ecb-bc17-03e117fca1a2",
             "_collection_name": "email_assistant_memory"
           },
           "page_content": "{'email_thread': 'Team, please find the attached project status report for this week. Let me know if you have any questions.', 'category': 'NOTIFY'}"
@@ -174,12 +174,12 @@
         {
           "metadata": {
             "namespace": "email_assistant|John|examples",
-            "key": "09d6d60a-5ee9-47ad-9373-642f593cc0e9",
+            "key": "85d4d8e2-4ebe-4b4b-9901-c815edda5cf4",
             "value": {
               "email_thread": "Hi John, can you clarify the API specs?",
               "category": "RESPOND"
             },
-            "_id": "09d6d60a-5ee9-47ad-9373-642f593cc0e9",
+            "_id": "85d4d8e2-4ebe-4b4b-9901-c815edda5cf4",
             "_collection_name": "email_assistant_memory"
           },
           "page_content": "{'email_thread': 'Hi John, can you clarify the API specs?', 'category': 'RESPOND'}"
@@ -201,12 +201,12 @@
         {
           "metadata": {
             "namespace": "email_assistant|John|examples",
-            "key": "09d6d60a-5ee9-47ad-9373-642f593cc0e9",
+            "key": "85d4d8e2-4ebe-4b4b-9901-c815edda5cf4",
             "value": {
               "email_thread": "Hi John, can you clarify the API specs?",
               "category": "RESPOND"
             },
-            "_id": "09d6d60a-5ee9-47ad-9373-642f593cc0e9",
+            "_id": "85d4d8e2-4ebe-4b4b-9901-c815edda5cf4",
             "_collection_name": "email_assistant_memory"
           },
           "page_content": "{'email_thread': 'Hi John, can you clarify the API specs?', 'category': 'RESPOND'}"
@@ -214,12 +214,12 @@
         {
           "metadata": {
             "namespace": "email_assistant|John|examples",
-            "key": "dc99bd9e-356e-4279-8a27-3812745ac3f5",
+            "key": "64eb3486-206e-4712-b218-79d9b2745d51",
             "value": {
               "email_thread": "John, the client has requested an update on the deliverables. Can you provide the latest status?",
               "category": "RESPOND"
             },
-            "_id": "dc99bd9e-356e-4279-8a27-3812745ac3f5",
+            "_id": "64eb3486-206e-4712-b218-79d9b2745d51",
             "_collection_name": "email_assistant_memory"
           },
           "page_content": "{'email_thread': 'John, the client has requested an update on the deliverables. Can you provide the latest status?', 'category': 'RESPOND'}"
@@ -227,12 +227,12 @@
         {
           "metadata": {
             "namespace": "email_assistant|John|examples",
-            "key": "5897b730-1e40-4431-af50-235ec74f73e9",
+            "key": "73fe2bf1-f9a9-4f96-8edb-b025ed1dc8b9",
             "value": {
               "email_thread": "Dear John, please review the updated work-from-home policy attached. Let us know if you have any questions.",
               "category": "NOTIFY"
             },
-            "_id": "5897b730-1e40-4431-af50-235ec74f73e9",
+            "_id": "73fe2bf1-f9a9-4f96-8edb-b025ed1dc8b9",
             "_collection_name": "email_assistant_memory"
           },
           "page_content": "{'email_thread': 'Dear John, please review the updated work-from-home policy attached. Let us know if you have any questions.', 'category': 'NOTIFY'}"
